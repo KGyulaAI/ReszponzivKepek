@@ -1,0 +1,30 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+}
+
+.kartya {
+    background-color: rgb(62, 52, 202);
+    border-radius: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    height: auto;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    body {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1280px) {
+    body {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
